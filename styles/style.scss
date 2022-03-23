@@ -501,6 +501,105 @@ section {
   }
 }
 
+// Contact Page - Section 5 🦊🦊🦊
+.contact-content-container {
+  display: flex;
+  padding-top: 3rem;
+  .left-contact {
+    flex: 2;
+    h4 {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+
+    .contact-info {
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          margin: 0.3rem 0 !important;
+          padding: 0 !important;
+        }
+        .icon {
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          i {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .contact-icon {
+      display: flex;
+      margin-top: 1.8rem;
+      a {
+        display: flex;
+        align-items: center;
+        color: var(--color-white);
+        cursor: pointer;
+        justify-content: center;
+        background-color: var(--color-grey-2);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0 0.4rem;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          background-color: var(--color-secondary);
+          i {
+            color: var(--color-primary);
+          }
+        }
+        i {
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .right-contact {
+    flex: 3;
+    margin-left: 3rem;
+    .input-control {
+      margin: 1.4rem 0;
+      input,
+      textarea {
+        border-radius: 10px;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        padding: 0.7rem 1rem;
+        outline: none;
+        border: none;
+        background-color: var(--color-grey-5);
+        width: 100%;
+        color: var(--color-white);
+        resize: none;
+      }
+    }
+    .i-c-2 {
+      display: flex;
+      :last-child {
+        margin-left: 1rem;
+      }
+    }
+    .submit-btn {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
 // Utilities 🦊🦊🦊
 // 1. Buttons
 .btn-container {
